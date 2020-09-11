@@ -1,7 +1,8 @@
 <template>
-  <v-app-bar app :height="90">
+  <v-app-bar app :height="90" id="main-header">
     <div class="d-flex align-center">
       <v-img src="@/assets/symbol-1.svg" />
+      <v-app-bar-nav-icon class="d-md-none"></v-app-bar-nav-icon>
       <v-divider class="ml-3 mr-6" vertical></v-divider>
       <SwitchButton />
       <SearchBar />
@@ -38,7 +39,6 @@ export default {
   methods: {
       openFilterMenu() {
           this.$root.$emit('open-filter-menu');
-          console.log("openponepone")
       }
   }
 };

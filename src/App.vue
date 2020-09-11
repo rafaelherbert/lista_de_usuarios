@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <AppBar />
+    <Header />
     <FilterMenu />
     <v-main class="bg">
       <Table class="mr-10 ml-10 mt-10" />
@@ -11,7 +11,7 @@
 
 <script>
 import Table from "./components/Table";
-import AppBar from "./components/AppBar";
+import Header from "./components/Header";
 import FilterMenu from "./components/FilterMenu";
 import Footer from "./components/Footer";
 
@@ -20,7 +20,7 @@ export default {
 
   components: {
     Table,
-    AppBar,
+    Header,
     FilterMenu,
     Footer
   },

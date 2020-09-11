@@ -1,24 +1,23 @@
-# frontend
+# DESAFIO - Desenvolvedor FullStack.
 
-## Project setup
+## Setup do projeto
+
+### Passo 1) Instalar as dependencias NPM.
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Passo 3) Instalar o json-server (Mock API usado pela aplicação.)
+```
+npm install -g json-server
+```
+
+### Passo 4) Entrar no diretório da aplicação e iniciar a Mock API.
+```
+json-server db.json -p 3000
+```
+
+### Passo 2) Compilar e servir a aplicação (Provavelmente ela estará acessível no http://localhost:8080)
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-center">
+  <div class="d-flex align-center" id="switch-button">
     <a class="custom-button" :class="b1">
       <img :src="img1" alt srcset />
     </a>

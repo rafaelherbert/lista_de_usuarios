@@ -11,6 +11,7 @@
       class="elevation-1"
       @page-count="pageCount = $event"
       @click:row="handleClick"
+      id="main-table"
     >
       <template v-slot:item.status="{ item }">
         <span :style="{color:getColor(item.status)}">{{ item.status ? "ATIVO" : "INATIVO" }}</span>
@@ -91,7 +92,7 @@ export default {
 
     getColor(status) {
       if (status) return "#31BA1F";
-      else "red";
+      else return "red";
     },
 
     searchFilter(search) {
