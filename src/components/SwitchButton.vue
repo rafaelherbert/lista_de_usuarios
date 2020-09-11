@@ -3,7 +3,7 @@
     <a class="custom-button" :class="b1">
       <img :src="img1" alt srcset />
     </a>
-    <a class="custom-button mr-10" :class="b2">
+    <a class="custom-button" :class="b2">
       <img :src="img2" alt srcset />
     </a>
   </div>

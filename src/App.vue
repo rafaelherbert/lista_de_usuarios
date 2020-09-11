@@ -2,7 +2,7 @@
   <v-app>
     <Header />
     <FilterMenu />
-    <v-main class="bg">
+    <v-main class="bg d-flex justify-center">
       <Table class="mr-10 ml-10 mt-10" />
     </v-main>
     <Footer/>

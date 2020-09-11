@@ -20,7 +20,7 @@
         <img src="@/assets/horizontal_dots.svg" />
       </template>
     </v-data-table>
-    <div class="text-center pt-2">
+    <div class="text-center mt-5 mb-5">
       <v-pagination v-model="page" :length="pageCount" color="#D83367"></v-pagination>
     </div>
   </div>
