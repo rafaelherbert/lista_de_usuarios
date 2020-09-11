@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app :height="90" id="main-header">
+  <v-app-bar app :collapse="$vuetify.breakpoint.sm" clipped-right :height="90" id="main-header">
     <div class="d-flex align-center">
       <v-img src="@/assets/symbol-1.svg" />
       <v-app-bar-nav-icon class="d-md-none"></v-app-bar-nav-icon>
