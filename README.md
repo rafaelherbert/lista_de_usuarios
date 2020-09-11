@@ -12,7 +12,7 @@ npm install
 npm install -g json-server
 ```
 
-### Passo 4) Entrar no diretório da aplicação e iniciar a Mock API.
+### Passo 4) Entrar no diretório da aplicação e iniciar a Mock API. (A aplicação está consumindo a Mock API na porta 3000.)
 ```
 json-server db.json -p 3000
 ```

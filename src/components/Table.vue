@@ -28,6 +28,7 @@
 
 <script>
 import axios from "axios";
+let api_url = "http://localhost:3000";
 export default {
   data() {
     return {
@@ -56,7 +57,7 @@ export default {
       })
   },
   created() {
-    axios.get("http://localhost:3000/users").then((response) => {
+    axios.get(api_url + "/users").then((response) => {
       this.users = response.data;
       console.log(response);
     });
@@ -97,7 +98,7 @@ export default {
 
     searchFilter(search) {
         console.log("Search filtering...");
-        axios.get(encodeURI(`http://localhost:3000/users?q=${search}`)).then((response) => {
+        axios.get(encodeURI(api_url + `/users?q=${search}`)).then((response) => {
             this.users = response.data;
         });
     },
@@ -139,8 +140,7 @@ export default {
             query += `status=${status}`;
         }
 
-        console.log(`http://localhost:3000/users?${query}`);
-        axios.get(encodeURI(`http://localhost:3000/users?${query}`)).then((response) => {
+        axios.get(encodeURI(api_url + `/users?${query}`)).then((response) => {
             this.users = response.data;
             console.log(response.data);
         });

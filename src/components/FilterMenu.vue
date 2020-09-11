@@ -44,6 +44,9 @@ export default {
     this.$root.$on("open-filter-menu", () => {
       this.open();
     });
+    this.$root.$on("close-filter-menu", () => {
+      this.close();
+    });
   },
   methods: {
     close() {

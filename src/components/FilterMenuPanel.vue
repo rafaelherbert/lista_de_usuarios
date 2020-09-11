@@ -46,9 +46,11 @@ export default {
   }),
   methods: {
     filter() {
-        event.preventDefault();
-        event.stopPropagation();
         this.$root.$emit("table-filter-menu-apply", {creation_date: this.creation_date, edit_date:this.edit_date, status:this.status});
+        this.creation_date = null;
+        this.edit_date = null;
+        this.status = null;
+        this.$root.$emit("close-filter-menu");
     },
   },
 };
