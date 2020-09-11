@@ -1,28 +1,60 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <AppBar />
+    <FilterMenu />
+    <v-main class="bg">
+      <Table class="mr-10 ml-10 mt-10" />
+    </v-main>
+    <Footer/>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Table from "./components/Table";
+import AppBar from "./components/AppBar";
+import FilterMenu from "./components/FilterMenu";
+import Footer from "./components/Footer";
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    HelloWorld
-  }
-}
+    Table,
+    AppBar,
+    FilterMenu,
+    Footer
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 5px 14px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 14px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 14px -10px rgba(0, 0, 0, 0.75);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.audiowide {
+  font-family: "Audiowide", cursive;
+}
+
+.bg {
+  background-color: #f5f5f5 !important;
 }
 </style>
